@@ -10,15 +10,18 @@
 #   Explanation of what this parameter affects and what it defaults to.
 #   e.g. "Specify one or more upstream ntp servers as an array."
 #
-class gblbar1_home_dir (
-  $package_name = $::gblbar1_home_dir::params::package_name,
-  $service_name = $::gblbar1_home_dir::params::service_name,
-) inherits ::gblbar1_home_dir::params {
+class gblbar1_home_dir {
 
-  # validate parameters here
 
-  class { '::gblbar1_home_dir::install': } ->
-  class { '::gblbar1_home_dir::config': } ~>
-  class { '::gblbar1_home_dir::service': } ->
-  Class['::gblbar1_home_dir']
+  file { "/home/gblbar1/.vimtest" :
+    ensure  => directory,
+    owner   => "gblbar1",
+    group   => "gblbar1",
+    mode    => "0755",
+    source  => "puppet:///modules/gblbar1_home_dir/vim",
+    recurse => true,
+    require => Class["::accounts"],
+  }
+
+
 }
