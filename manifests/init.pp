@@ -13,7 +13,7 @@
 class gblbar1_home_dir {
 
 
-  file { '/home/gblbar1/.vimtest' :
+  file { '/home/gblbar1/.vim' :
     ensure  => directory,
     owner   => 'gblbar1',
     group   => 'gblbar1',

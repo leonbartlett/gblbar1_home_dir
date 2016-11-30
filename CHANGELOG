@@ -1,3 +1,6 @@
+2016-11-30 Release 0.1.2
+- changed directory to .vim
+
 2016-11-30 Release 0.1.1
 - Removed dependency on accounts class
 
