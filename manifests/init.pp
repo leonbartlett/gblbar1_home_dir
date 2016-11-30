@@ -20,7 +20,6 @@ class gblbar1_home_dir {
     mode    => '0755',
     source  => 'puppet:///modules/gblbar1_home_dir/vim',
     recurse => true,
-    require => Class['::accounts'],
   }
 
   file { '/home/gblbar1/.gitconfig' :
@@ -29,7 +28,6 @@ class gblbar1_home_dir {
     group   => 'gblbar1',
     mode    => '0664',
     source  => 'puppet:///modules/gblbar1_home_dir/gitconfig',
-    require => Class['::accounts'],
   }
 
 

@@ -1,2 +1,5 @@
+2016-11-30 Release 0.1.1
+- Removed dependency on accounts class
+
 2016-11-30 Release 0.1.0
 - Added .gitconfig file
