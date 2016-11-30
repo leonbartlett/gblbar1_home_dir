@@ -13,15 +13,25 @@
 class gblbar1_home_dir {
 
 
-  file { "/home/gblbar1/.vimtest" :
+  file { '/home/gblbar1/.vimtest' :
     ensure  => directory,
-    owner   => "gblbar1",
-    group   => "gblbar1",
-    mode    => "0755",
-    source  => "puppet:///modules/gblbar1_home_dir/vim",
+    owner   => 'gblbar1',
+    group   => 'gblbar1',
+    mode    => '0755',
+    source  => 'puppet:///modules/gblbar1_home_dir/vim',
     recurse => true,
-    require => Class["::accounts"],
+    require => Class['::accounts'],
   }
+
+  file { '/home/gblbar1/.gitconfig' :
+    ensure  => present,
+    owner   => 'gblbar1',
+    group   => 'gblbar1',
+    mode    => '0664',
+    source  => 'puppet:///modules/gblbar1_home_dir/gitconfig',
+    require => Class['::accounts'],
+  }
+
 
 
 }
