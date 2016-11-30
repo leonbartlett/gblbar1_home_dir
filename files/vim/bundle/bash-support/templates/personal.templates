@@ -1,0 +1,20 @@
+§ =============================================================
+§  Personal Information
+§ =============================================================
+
+SetMacro( 'AUTHOR',       'Leon Bartlett' )
+SetMacro( 'AUTHORREF',    'GBLBAR1' )
+SetMacro( 'EMAIL',        'leon.bartlett@atradius.com' )
+SetMacro( 'ORGANIZATION', 'ITS - Server and Storage Team' )
+SetMacro( 'COMPANY',      'Atradius' )
+SetMacro( 'COPYRIGHT',    'Copyright (c) |YEAR|, |AUTHOR|' )
+SetMacro( 'LICENSE',      'GNU General Public License' )
+
+§ =============================================================
+§  Date and Time Format
+§ =============================================================
+
+§SetFormat( 'DATE', '%x' )
+§SetFormat( 'TIME', '%H:%M' )
+§SetFormat( 'YEAR', '%Y' )
+
