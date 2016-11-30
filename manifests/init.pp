@@ -17,7 +17,7 @@ class gblbar1_home_dir {
     ensure  => directory,
     owner   => 'gblbar1',
     group   => 'gblbar1',
-    mode    => '0755',
+    mode    => '0775',
     source  => 'puppet:///modules/gblbar1_home_dir/vim',
     recurse => true,
   }
