@@ -1,0 +1,28 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+
+
+set -o vi
+
+export JAVA_HOME=/usr/lib/jvm/jre-1.8.0
+export IAAS_HOME=/opt/oracle/iaas/cli
+export IAAS_BASE_URL=https://cdf-el1-emoc1.atradiusnet.com
+export IAAS_ACCESS_KEY_FILE=~/gblbar.jre.key
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin:$IAAS_HOME/bin
+export PATH
+
+export http_proxy='https://internetgateway.cdf.atradiusnet.com:8080'
+export https_proxy=$http_proxy
+export ftp_proxy=$http_proxy
+export rsync_proxy=$http_proxy
+export HTTP_PROXY=$http_proxy
+export HTTPS_PROXY=$http_proxy
+export no_proxy=localhost,127.0.0.0/8,10.0.0.0/8,172.16.0.0/12,192.168.0.0/16

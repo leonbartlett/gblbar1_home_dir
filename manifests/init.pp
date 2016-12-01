@@ -36,6 +36,14 @@ class gblbar1_home_dir {
     mode   => '0664',
     source => 'puppet:///modules/gblbar1_home_dir/vimrc',
   }
+  file { '/home/gblbar1/.bash_profile' :
+    ensure => present,
+    owner  => 'gblbar1',
+    group  => 'gblbar1',
+    mode   => '0644',
+    source => 'puppet:///modules/gblbar1_home_dir/bash_profile',
+  }
+
 
 
 
