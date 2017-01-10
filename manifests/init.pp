@@ -20,7 +20,7 @@ class gblbar1_home_dir {
     mode    => "0755",
     source  => "puppet:///modules/gblbar1_home_dir/vim",
     recurse => true,
-    require => Class["::accounts"],
+    #    require => Class["::accounts"],
   }
 
 
