@@ -13,14 +13,6 @@
 class gblbar1_home_dir {
 
 
-  file { '/home/gblbar1/.vim' :
-    ensure  => directory,
-    owner   => 'gblbar1',
-    group   => 'gblbar1',
-    mode    => '0775',
-    source  => 'puppet:///modules/gblbar1_home_dir/vim',
-    recurse => true,
-  }
   file { '/home/gblbar1/.gitconfig' :
     ensure => present,
     owner  => 'gblbar1',
@@ -63,7 +55,6 @@ class gblbar1_home_dir {
     mode    => '0644',
     require => File['/home/gblbar1/puppet'],
   }
-
   file { '/home/gblbar1/bin' :
     ensure  => directory,
     owner   => 'gblbar1',
