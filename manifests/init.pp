@@ -49,13 +49,13 @@ class gblbar1_home_dir {
     mode    => '0655',
     recurse => true,
     purge   => false,
-    source => "puppet:///modules/${module_name}/puppet",
+    source  => "puppet:///modules/${module_name}/puppet",
   }
-  file { "/home/gblbar1/bin" :
+  file { '/home/gblbar1/bin' :
     ensure  => directory,
-    owner   => "gblbar1",
-    group   => "gblbar1",
-    mode    => "0744",
+    owner   => 'gblbar1',
+    group   => 'gblbar1',
+    mode    => '0744',
     source  => "puppet:///modules/${module_name}/bin",
     recurse => true,
     purge   => false,
