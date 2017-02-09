@@ -43,10 +43,11 @@ class gblbar1_home_dir {
     source => 'puppet:///modules/gblbar1_home_dir/bashrc',
   }
   file { '/home/gblbar1/puppet/modules' :
-    ensure => directory,
-    owner  => 'gblbar1',
-    group  => 'gblbar1',
-    mode   => '0655',
+    ensure  => directory,
+    owner   => 'gblbar1',
+    group   => 'gblbar1',
+    mode    => '0655',
+    recurse => true,
   }
   file { '/home/gblbar1/puppet/manifests' :
     ensure => directory,
