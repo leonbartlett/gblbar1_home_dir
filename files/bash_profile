@@ -19,7 +19,7 @@ export IAAS_ACCESS_KEY_FILE=~/gblbar.jre.key
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:$JAVA_HOME/bin:$IAAS_HOME/bin
 export PATH
 
-export http_proxy='https://internetgateway.cdf.atradiusnet.com:8080'
+export http_proxy='http://internetgateway.cdf.atradiusnet.com:8080'
 export https_proxy=$http_proxy
 export ftp_proxy=$http_proxy
 export rsync_proxy=$http_proxy
