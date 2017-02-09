@@ -54,12 +54,4 @@ class gblbar1_home_dir {
     group  => 'gblbar1',
     mode   => '0755',
   }
-  file { '/home/gblbar1/git_personal_access_tokens' :
-    ensure => present,
-    owner  => 'gblbar1',
-    group  => 'gblbar1',
-    mode   => '0400',
-    source => 'puppet:///modules/gblbar1_home_dir/git_personal_access_tokens',
-  }
-
 }
