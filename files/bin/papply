@@ -1,0 +1,7 @@
+#!/bin/sh
+PUPPETDIR=/home/gblbar1/puppet
+if [[ $1 == "-x" ]]; then
+	sudo /usr/bin/puppet apply --modulepath ${PUPPETDIR}/modules ${PUPPETDIR}/manifests/site.pp --test
+else	
+	sudo /usr/bin/puppet apply --modulepath ${PUPPETDIR}/modules ${PUPPETDIR}/manifests/site.pp --test --noop
+fi
