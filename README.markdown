@@ -1,6 +1,6 @@
 # My Home Dir #
 
-Sorts my home dir just the way I like it.
+Sorts my home dir just the way I like it. :metal:
 
 # Author #
 
