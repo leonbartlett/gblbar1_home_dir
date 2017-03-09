@@ -1,3 +1,13 @@
+# My Home Dir #
+
+Sorts my home dir just the way I like it.
+
+# Author #
+
+ * Leon Bartlett <leonbartlett@gmail.com>
+ * [GitHub Project](https://github.com/leonbartlett/gblbar1_home_dir)
+ * [@eddie_b74](http://twitter.com/eddie_b74)
+
 #### Table of Contents
 
 1. [Overview](#overview)
