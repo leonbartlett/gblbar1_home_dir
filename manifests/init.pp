@@ -42,10 +42,14 @@ class gblbar1_home_dir {
   }
   file { '/home/gblbar1/puppet/manifests' :
     ensure  => directory,
+
     owner   => 'gblbar1',
     group   => 'gblbar1',
-    mode    => '0644',
+    mode    => '0755',
     require => File['/home/gblbar1/puppet'],
+    source  => "puppet:///modules/gblbar1_home_dir/vim",
+    recurse => true,
+    #    require => Class["::accounts"],
   }
 
   file { '/home/gblbar1/puppet/modules' :
